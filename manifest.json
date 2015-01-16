@@ -1,0 +1,18 @@
+{
+	"manifest_version": 2,
+
+	"name": "couchbetter",
+	"description": "Adds a fullscreen button to CouchTuner",
+	"version": "1.0",
+
+	"content_scripts": [
+		{
+			"matches": ["http://couchtuner.eu.com/*/*/*.html"],
+			"js": ["script.js"]
+		}
+	],
+	"permissions": [
+		"activeTab",
+		"https://cdnjs.cloudflare.com/"
+	]
+}
